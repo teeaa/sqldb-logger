@@ -1,6 +1,6 @@
 # SQLDB-Logger
 
-[![Coverage Status](https://coveralls.io/repos/github/simukti/sqldb-logger/badge.svg)](https://coveralls.io/github/simukti/sqldb-logger) [![Go Report Card](https://goreportcard.com/badge/github.com/simukti/sqldb-logger)](https://goreportcard.com/report/github.com/simukti/sqldb-logger) [![Sonar Violations (long format)](https://img.shields.io/sonar/violations/simukti_sqldb-logger?server=https%3A%2F%2Fsonarcloud.io)](https://sonarcloud.io/dashboard?id=simukti_sqldb-logger) [![Sonar Tech Debt](https://img.shields.io/sonar/tech_debt/simukti_sqldb-logger?server=https%3A%2F%2Fsonarcloud.io)](https://sonarcloud.io/dashboard?id=simukti_sqldb-logger) [![Sonar Quality Gate](https://img.shields.io/sonar/quality_gate/simukti_sqldb-logger?server=https%3A%2F%2Fsonarcloud.io)](https://sonarcloud.io/dashboard?id=simukti_sqldb-logger) [![Documentation](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/simukti/sqldb-logger) [![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://raw.githubusercontent.com/simukti/sqldb-logger/master/LICENSE.txt)
+[![Coverage Status](https://coveralls.io/repos/github/teeaa/sqldb-logger/badge.svg)](https://coveralls.io/github/teeaa/sqldb-logger) [![Go Report Card](https://goreportcard.com/badge/github.com/teeaa/sqldb-logger)](https://goreportcard.com/report/github.com/teeaa/sqldb-logger) [![Sonar Violations (long format)](https://img.shields.io/sonar/violations/teeaa_sqldb-logger?server=https%3A%2F%2Fsonarcloud.io)](https://sonarcloud.io/dashboard?id=teeaa_sqldb-logger) [![Sonar Tech Debt](https://img.shields.io/sonar/tech_debt/teeaa_sqldb-logger?server=https%3A%2F%2Fsonarcloud.io)](https://sonarcloud.io/dashboard?id=teeaa_sqldb-logger) [![Sonar Quality Gate](https://img.shields.io/sonar/quality_gate/teeaa_sqldb-logger?server=https%3A%2F%2Fsonarcloud.io)](https://sonarcloud.io/dashboard?id=teeaa_sqldb-logger) [![Documentation](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/teeaa/sqldb-logger) [![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://raw.githubusercontent.com/teeaa/sqldb-logger/master/LICENSE.txt)
 
 A logger for Go SQL database driver without modify existing `*sql.DB` stdlib usage.
 
@@ -20,7 +20,7 @@ _Colored console writer output above only for sample/development_
 ## INSTALL
 
 ```bash
-go get -u -v github.com/simukti/sqldb-logger
+go get -u -v github.com/teeaa/sqldb-logger
 ```
 
 _Version pinning using dependency manager such as [Mod](https://github.com/golang/go/wiki/Modules) or [Dep](https://github.com/golang/dep) is highly recommended._
@@ -62,8 +62,8 @@ db.Ping() // to check connectivity and DSN correctness
 To:
 
 ```go
-// import sqldblogger "github.com/simukti/sqldb-logger"
-// import "github.com/simukti/sqldb-logger/logadapter/zerologadapter"
+// import sqldblogger "github.com/teeaa/sqldb-logger"
+// import "github.com/teeaa/sqldb-logger/logadapter/zerologadapter"
 dsn := "username:passwd@tcp(mysqlserver:3306)/dbname?parseTime=true"
 db, err := sql.Open("mysql", dsn) // db is *sql.DB
 // handle err
@@ -146,7 +146,7 @@ db = sqldblogger.OpenDriver(
 )
 ```
 
-[Click here](https://pkg.go.dev/github.com/simukti/sqldb-logger#Option) for options documentation.
+[Click here](https://pkg.go.dev/github.com/teeaa/sqldb-logger#Option) for options documentation.
 
 ## MOTIVATION
 

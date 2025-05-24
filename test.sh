@@ -9,4 +9,4 @@ ls -d logadapter/* | xargs -I {} bash -c "cd '{}' \
 && cat coverage.out | grep -v \"mode:\" >> ../../coverage.out \
 && rm coverage.out"
 # for go repo with nested modules, remove repo prefix, otherwise goveralls will failed.
-sed -i -e 's/github.com\/simukti\/sqldb-logger/./g' coverage.out
+sed -i -e 's/github.com\/teeaa\/sqldb-logger/./g' coverage.out

@@ -1,9 +1,9 @@
-module github.com/simukti/sqldb-logger/logadapter/slogadapter
+module github.com/teeaa/sqldb-logger/logadapter/slogadapter
 
-go 1.17
+go 1.24
 
 require (
-	github.com/simukti/sqldb-logger v0.0.0-20230108154142-840120f68bea
+	github.com/teeaa/sqldb-logger v0.1.0
 	github.com/stretchr/testify v1.8.1
 )
 
