@@ -9,7 +9,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	sqldblogger "github.com/simukti/sqldb-logger"
+	sqldblogger "github.com/teeaa/sqldb-logger"
 )
 
 // A TestHandler is an slog.Handler that simply records the latest record,

@@ -6,7 +6,7 @@ import (
 	"context"
 	"log/slog"
 
-	sqldblogger "github.com/simukti/sqldb-logger"
+	sqldblogger "github.com/teeaa/sqldb-logger"
 )
 
 type slogAdapter struct {
@@ -21,7 +21,6 @@ func New(logger *slog.Logger) sqldblogger.Logger {
 // Log implement sqldblogger.Logger and converts its levels to corresponding
 // log/slog ones.
 func (a *slogAdapter) Log(ctx context.Context, sqldbLevel sqldblogger.Level, msg string, data map[string]interface{}) {
-
 	attrs := make([]slog.Attr, 0, len(data))
 	for k, v := range data {
 		attrs = append(attrs, slog.Any(k, v))
